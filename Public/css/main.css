@@ -405,7 +405,7 @@ input {
 .projects__item img{
     width: 390px;
     height: 300px;
-    display: block;
+    display: flex;
 }
 
 .projects__info {
