@@ -300,9 +300,9 @@ input {
 
 .about__img {
     width: 280px;
-    height: 260px;
+    height: auto;
     -webkit-clip-path: polygon(22% 0, 78% 0, 100% 50%, 82% 100%, 21% 100%, 0 50%);
-    clip-path: polygon(22% 0, 78% 0, 100% 50%, 82% 100%, 21% 100%, 0 50%);
+    clip-path: polygon(25% 9%, 75% 9%, 100% 52%, 74% 93%, 28% 93%, 0 52%);
     margin-bottom: 30px
 }
 
@@ -402,6 +402,11 @@ input {
     transform: translateY(0);
     opacity: 1
 }
+.projects__item img{
+    width: 390px;
+    height: 300px;
+    display: block;
+}
 
 .projects__info {
     position: absolute;
@@ -449,13 +454,14 @@ input {
 
 .social {
     position: relative;
-    padding: 100px 0;
-    background-color: #333
+    padding: 100px 0 50px;
+    background-color: #333;
+    overflow: hidden;
 }
 
 .social__up {
     position: absolute;
-    top: -29px;
+    top: -2px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 29px;
@@ -481,16 +487,18 @@ input {
 
 .social__list:hover .social__item {
     opacity: .4
+
 }
 
 .social__item {
+    overflow: hidden;
     display:flex;
     margin: 80px 0;
     transition: all .1s ease-in-out
 }
 
 .social__item:hover {
-    opacity: 1 !important
+    opacity: 1 !important;
 }
 
 .social__icon {
@@ -499,12 +507,60 @@ input {
 }
 .social__text{
     font-size:25px;
-    padding: 5px;
+    padding: 5px 20px;
     background-color:#fff;
     text-align: center;
     font-weight: 700;
     border-radius: 40px;
+    overflow: hidden;
+    position: absolute;
+    top: 999px;
+}
+.social__item:hover .social__text {
     margin-left: 30px;
+    position: unset;
+}
+@media only screen and (max-width:800px){
+    .presentation{
+        height:100vh;
+    }
+    .presentation__title{
+        font-size: 20px;
+        margin: 30vh 0 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .about__contents {
+        display: block;
+        align-items: center
+    }
+    .about__history{
+       padding: 30px 15px;
+       width: 100%;
+   }
+   .about__skills{
+    margin: 0;
+    padding: 30px 25px;
+    width: 100%;
+   }
+    .center {
+        margin: 0;
+        display:block;
+    }
+    .projects__item img{
+        margin: auto;
+        width: 80%;
+        height: 90%;
+    }
+    .social__list{
+        margin: 15px;
+    }
+    .social__text{
+        font-size: 15px;
+        padding: 12px 20px 5px;
+        
+    }
 }
 
 /*# sourceMappingURL=main.css.map */
