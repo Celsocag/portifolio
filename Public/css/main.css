@@ -551,11 +551,11 @@ input {
     }
     .about__skills{
         width: 75%;
-        margin-left: 60px;
+        margin-left: 20px;
         margin-right: auto;
     }
     .about__skills-percent{
-        right: -229px;
+        right: -215px;
         bottom: -5px;
     }
     .about__skills-item{
