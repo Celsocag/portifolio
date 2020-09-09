@@ -451,9 +451,6 @@ input {
 .projects__bt:hover {
     background-color: #3ea3de
 }
-.projects__item-mobileLink{
-    display: none;
-}
 
 .social {
     position: relative;
@@ -556,10 +553,6 @@ input {
     .projects__item img{
         margin: auto;
         padding: 0 1%;
-    }
-
-    .projects__item-mobileLink{
-        display: unset;
     }
 
     .projects__info a{
