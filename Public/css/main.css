@@ -347,8 +347,11 @@ input {
 
 .about__skills-percent {
     font-size: 13px;
-    font-weight: 500;
-    z-index: 1
+    font-weight: 500; 
+    position: relative;
+    right: -485px;
+    bottom: -5px;
+    
 }
 
 .about__bar {
@@ -551,9 +554,14 @@ input {
         margin-left: 60px;
         margin-right: auto;
     }
+    .about__skills-percent{
+        right: -229px;
+        bottom: -5px;
+    }
     .about__skills-item{
         margin: 0 0 15px 10px;
     }
+    
 }
 
 /*# sourceMappingURL=main.css.map */
