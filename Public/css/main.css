@@ -333,12 +333,12 @@ input {
 
 .about__skills-item {
     display: flex;
-    align-items: center;
     position: relative;
-    justify-content: flex-end;
     background-color: #4f3b3b36;
     height: 26px;
-    padding-right: 11px
+    padding-right: 11px;
+    left: 55px;
+    width: 90%;
 }
 
 .about__skills-item:not(:last-child) {
@@ -349,7 +349,7 @@ input {
     font-size: 10px;
     font-weight: 500; 
     position: relative;
-    right: -485px;
+    right: -515px;
     bottom: -5px;
     
 }
@@ -365,7 +365,7 @@ input {
 .about__bar-name {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -105;
     height: 100%;
     width: 100px;
     background-color: #3ea3de;
