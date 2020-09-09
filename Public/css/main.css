@@ -355,7 +355,7 @@ input {
     background-color: #0b517a;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100px;
     height: 100%
 }
 
@@ -530,7 +530,6 @@ input {
         display: none;
     }
     
-
     .about__contents {
         display: block;
         align-items: center
@@ -538,30 +537,22 @@ input {
     .about__history{
        padding: 30px 15px;
        width: 100%;
-   }
-   .about__skills{
-    margin: 0;
-    padding: 30px 25px;
-    width: 100%;
-   }
-    .center {
-        margin: 0;
-        display:block;
     }
-    .projects__item img{
-        width: unset;
-        height: unset;
-        margin-bottom: 10px;
+    .about__bar{
+        left:0px;
     }
-
-    .projects__info a{
-        display: none;
+    .about__bar-name{
+        width: 50px;
+        font-size:10px;
+        left: -55px;
     }
-    .social{
-        padding: 30px 0 5px;
+    .about__skills{
+        width: 75%;
+        margin-left: 60px;
+        margin-right: auto;
     }
-    .social__list{
-        margin: 55px;
+    .about__skills-item{
+        margin: 0 0 15px 10px;
     }
 }
 
