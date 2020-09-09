@@ -349,8 +349,9 @@ input {
     font-size: 10px;
     font-weight: 500; 
     position: relative;
-    right: -515px;
+    right: -10px;
     bottom: -5px;
+    color:#fff;
     
 }
 
