@@ -359,14 +359,14 @@ input {
     background-color: #0b517a;
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 0;
     height: 100%
 }
 
 .about__bar-name {
     position: absolute;
     top: 0;
-    left: -105;
+    left: -105px;
     height: 100%;
     width: 100px;
     background-color: #3ea3de;
