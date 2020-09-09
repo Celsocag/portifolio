@@ -271,18 +271,18 @@ input {
     text-transform: uppercase;
     font-size: 15px;
     transition: all 190ms ease-out;
-    cursor: pointer
-}
-
-.menu__item:not(:last-child) {
-    margin-right: 40px
-}
+    cursor: pointer;
+    padding-right: 50px
+} 
 
 .menu__item:hover {
     opacity: 1 !important;
     color: #3ea3de
 }
-
+.menu__mobile-icon{
+    width: 30px;
+    display: none;
+}
 .about {
     padding: 100px 0 140px
 }
@@ -451,6 +451,9 @@ input {
 .projects__bt:hover {
     background-color: #3ea3de
 }
+.projects__item-mobileLink{
+    display: none;
+}
 
 .social {
     position: relative;
@@ -531,6 +534,8 @@ input {
     .menu{
         display: none;
     }
+    
+
     .about__contents {
         display: block;
         align-items: center
@@ -550,16 +555,25 @@ input {
     }
     .projects__item img{
         margin: auto;
-        width: 80%;
-        height: 90%;
+        padding: 0 1%;
     }
+
+    .projects__item-mobileLink{
+        display: unset;
+    }
+
+    .projects__info a{
+        display: none;
+    }
+
     .social__list{
-        margin: 15px;
+        margin: 55px;
     }
     .social__text{
         font-size: 15px;
         padding: 12px 20px 5px;
-        
+        margin-left: 30px;
+        position: unset;
     }
 }
 
