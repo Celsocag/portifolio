@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <section class="presentation">
+  <section id="presentation__id" class="presentation">
     <h1 class="presentation__title">Olá, me chamo <span class="presentation__name">Celso Gonçalves</span>.
       <br> Sou um desenvolvedor de Front-end.</h1>
-    <button class="button button--bg-blue">Ver mais <span class="arrow">🠖</span></button>
+    <a href="#about__id"><button class="button button--bg-blue">Ver mais <span class="arrow">🠖</span></button></a>
   </section>
   <section class="menu">
     <nav class="center">
@@ -25,21 +25,20 @@
     </nav>
   </section>
 
-  <section class="about">
+  <section id="about__id"  class="about">
     <div class="area-title">
       <h2 class="area-title__maintitle">Sobre</h2>
     </div>
 
     <div class="center about__contents">
       <div class="about__history">
-        <img src="./14100510_1095615040528957_3189076247489285403_n.jpg" alt="Foto de Perfil" class="about__img">
-        <h3 class="about__who">Quem é {{{esse}}}</h3>
-        <p class="about__text">I'm a Front-End Developer for ChowNow in Los Angeles, CA.
-          <br> I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
-          <br> <a class="about__anchor" href="#">Papa o cu do pai clicando aqui</a> 
+        <img src="./img/avatar.jpg" alt="Foto de Perfil" class="about__img">
+        <h3 class="about__who">Quem é Celso ?</h3>
+        <p class="about__text">Eu sou um Desenvolvedor front-end iniciante, nascido em</p><p class="about__text presentation__name">Cabo-Frio, Rj.</p><p class="about__text">O típico nerd que você quer na sua equipe. Tenho um grande fascínio pela tecnologia e por isso estou sempre debruçado nesse assunto.
+          <br> <a class="about__anchor" href="#social__id">Vamos trabalhar juntos!</a> 
         </p>
       </div>
-      <div class="about__skills">
+      <div  class="about__skills">
         <div class="about__skills-item">
           <div class="about__bar" style="width: 90%;">
             <span class="about__bar-name">CSS</span>
@@ -74,24 +73,24 @@
     </div>
     <div class="center projects__list">
       <div class="projects__item">
-        <img src="" alt="" style="background-color: #cafe; width: 390px; height: 300px;display: block;">
+        <img src="./img/ecomerce.png" alt="" style= "width: 390px; height: 300px;display: block;">
         <div class="projects__info">
           <h4 class="projects__name">eComerce</h4>
           <a href="https://ecomerce-10.herokuapp.com/index.html" class="projects__bt">Veja Mais</a>
         </div>
       </div>
-      <a class="projects__bt"><div class="projects__item">
-        <img src="" alt="" style="background-color: #cafe; width: 390px; height: 300px;display: block;">
-        <div class="projects__info">
-          <h4 class="projects__name">ChowNow Ordering</h4>
-          <a>Veja Mais</a>
-        </div>
-      </div></a>
       <div class="projects__item">
-        <img src="" alt="" style="background-color: #cafe; width: 390px; height: 300px;display: block;">
+        <img src="./img/chatapp.png" alt="" style= "width: 390px; height: 300px;display: block;">
         <div class="projects__info">
-          <h4 class="projects__name">ChowNow Ordering</h4>
-          <a class="projects__bt">Veja Mais</a>
+          <h4 class="projects__name">chatApp</h4>
+          <a href="https://chatapp-10.herokuapp.com/" class="projects__bt">Veja Mais</a>
+        </div>
+      </div>
+      <div class="projects__item">
+        <img src="./img/chatapp.png" alt="" style= "width: 390px; height: 300px;display: block;">
+        <div class="projects__info">
+          <h4 class="projects__name">chatApp</h4>
+          <a href="https://chatapp-10.herokuapp.com/" class="projects__bt">Veja Mais</a>
         </div>
       </div>
       <div class="projects__item">
@@ -102,10 +101,10 @@
         </div>
       </div>
       <div class="projects__item">
-        <img src="" alt="" style="background-color: #cafe; width: 390px; height: 300px;display: block;">
+        <img src="./img/alura.png" alt="" style="width: 390px; height: 300px;display: block;">
         <div class="projects__info">
-          <h4 class="projects__name">ChowNow Ordering</h4>
-          <a class="projects__bt">Veja Mais</a>
+          <h4 class="projects__name">Alura HTML e CSS</h4>
+          <a href="https://html-css-basic-portifolio.herokuapp.com/" class="projects__bt">Veja Mais</a>
         </div>
       </div>
     </div>
@@ -117,23 +116,26 @@
     </div>
   </section>
 
-  <div class="social">
-    <span class="social__up">⇑</span>
+  <div id="social__id" class="social">
+    <a href="#presentation__id"><span class="social__up">⇑</span></a>
     <div class="social__list">
       <div class="social__item">
         <a href="" target="_blank">
-          <img class="social__icon" src="./linkedin.svg" alt="Logo Linkedin">
+          <img class="social__icon" src="./img/gmailicon.png" alt="e-Mail">
         </a>
+        <span class="social__text">celsoalbugo@gmail.com</span>
       </div>
       <div class="social__item">
-        <a href="" target="_blank">
-          <img class="social__icon" src="./linkedin.svg" alt="Logo Linkedin">
+        <a href="https://www.linkedin.com/in/celso-gon%C3%A7alves-761555140/" target="_blank">
+          <img class="social__icon" src="./img/linkedin.svg" alt="Linkedin">
         </a>
+        <span class="social__text">linkedin.com/in/celso-gonçalves-761555140</span>
       </div>
       <div class="social__item">
-        <a href="" target="_blank">
-          <img class="social__icon" src="./linkedin.svg" alt="Logo Linkedin">
+        <a href="https://github.com/Celsocag" target="_blank">
+          <img class="social__icon" src="./img/github.png" alt="Github">
         </a>
+        <span class="social__text">github.com/Celsocag</span>
       </div>
     </div>
   </div>
