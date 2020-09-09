@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "fast-dev": "gulp fast-dev",
+    "clean": "gulp clean"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "eslint": "^6.8.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-html-minify": "0.0.14",
+    "gulp-image": "^4.3.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-npm-dist": "^1.0.3",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
