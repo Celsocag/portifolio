@@ -295,7 +295,7 @@ input {
 .about__history {
     text-align: center;
     width: calc((100% / 2) - 40px);
-    margin-right: 40px
+    margin-right: 70px
 }
 
 .about__img {
