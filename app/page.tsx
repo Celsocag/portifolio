@@ -464,15 +464,15 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="bg-gray-900 py-20 text-white transition-colors duration-300 dark:bg-gray-800"
+        className="py-20 bg-gray-100 dark:bg-gray-900 transition-colors duration-300"
         aria-labelledby="contact-heading"
       >
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
-            <h2 id="contact-heading" className="mb-4 text-3xl font-bold md:text-4xl">
+            <h2 id="contact-heading" className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white transition-colors duration-300">
               {t("contactTitle")}
             </h2>
-            <p className="mx-auto max-w-2xl text-lg text-gray-300">{t("contactDescription")}</p>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors duration-300">{t("contactDescription")}</p>
           </div>
 
           <div
@@ -483,7 +483,7 @@ export default function Home() {
             {/* Email */}
             <a
               href="mailto:celsoalbugo@gmail.com"
-              className="group rounded-lg border border-gray-700 bg-gray-800 p-6 transition-all duration-300 hover:scale-105 hover:transform hover:border-blue-500 focus-visible:outline-blue-500 dark:border-gray-600 dark:bg-gray-700"
+              className="group bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 focus-visible:outline-blue-500 shadow-sm hover:shadow-md"
               role="listitem"
               aria-label="Enviar email para celsoalbugo@gmail.com"
             >
@@ -492,8 +492,8 @@ export default function Home() {
                   className="mx-auto mb-4 h-8 w-8 text-blue-400 transition-colors group-hover:text-blue-300"
                   aria-hidden="true"
                 />
-                <h3 className="mb-2 text-lg font-semibold">{t("email")}</h3>
-                <p className="mx-auto max-w-xs break-words text-gray-300 transition-colors group-hover:text-white">
+                <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white transition-colors duration-300">{t("email")}</h3>
+                <p className="mx-auto max-w-xs break-words text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
                   celsoalbugo@gmail.com
                 </p>
               </div>
@@ -504,7 +504,7 @@ export default function Home() {
               href="https://wa.me/5511978283108"
               target="_blank"
               rel="noopener noreferrer"
-              className="group rounded-lg border border-gray-700 bg-gray-800 p-6 transition-all duration-300 hover:scale-105 hover:transform hover:border-green-500 focus-visible:outline-green-500 dark:border-gray-600 dark:bg-gray-700"
+                 className="group bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-green-500 dark:hover:border-green-400 transition-all duration-300 hover:transform hover:scale-105 focus-visible:outline-green-500 shadow-sm hover:shadow-md"
               role="listitem"
               aria-label="Ligar para +55 11 978283108"
             >
@@ -513,8 +513,8 @@ export default function Home() {
                   className="mx-auto mb-4 h-8 w-8 text-green-400 transition-colors group-hover:text-green-300"
                   aria-hidden="true"
                 />
-                <h3 className="mb-2 text-lg font-semibold">{t("phone")}</h3>
-                <p className="text-gray-300 transition-colors group-hover:text-white">+55 11 978283108</p>
+                <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white transition-colors duration-300">{t("phone")}</h3>
+                <p className="text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">+55 11 978283108</p>
               </div>
             </a>
 
@@ -523,7 +523,7 @@ export default function Home() {
               href="https://linkedin.com/in/celso-gonçalves/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group rounded-lg border border-gray-700 bg-gray-800 p-6 transition-all duration-300 hover:scale-105 hover:transform hover:border-blue-600 focus-visible:outline-blue-600 dark:border-gray-600 dark:bg-gray-700"
+              className="group bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105 focus-visible:outline-blue-600 shadow-sm hover:shadow-md"
               role="listitem"
               aria-label="Conectar no LinkedIn (abre em nova aba)"
             >
@@ -532,8 +532,8 @@ export default function Home() {
                   className="mx-auto mb-4 h-8 w-8 text-blue-600 transition-colors group-hover:text-blue-500"
                   aria-hidden="true"
                 />
-                <h3 className="mb-2 text-lg font-semibold">{t("linkedin")}</h3>
-                <p className="text-gray-300 transition-colors group-hover:text-white">{t("connectWithMe")}</p>
+                <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white transition-colors duration-300">{t("linkedin")}</h3>
+                <p className="text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">{t("connectWithMe")}</p>
               </div>
             </a>
 
@@ -542,7 +542,7 @@ export default function Home() {
               href="https://github.com/Celsocag"
               target="_blank"
               rel="noopener noreferrer"
-              className="group rounded-lg border border-gray-700 bg-gray-800 p-6 transition-all duration-300 hover:scale-105 hover:transform hover:border-purple-500 focus-visible:outline-purple-500 dark:border-gray-600 dark:bg-gray-700"
+              className="group bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-400 transition-all duration-300 hover:transform hover:scale-105 focus-visible:outline-purple-500 shadow-sm hover:shadow-md"
               role="listitem"
               aria-label="Ver perfil no GitHub (abre em nova aba)"
             >
@@ -551,8 +551,8 @@ export default function Home() {
                   className="mx-auto mb-4 h-8 w-8 text-purple-400 transition-colors group-hover:text-purple-300"
                   aria-hidden="true"
                 />
-                <h3 className="mb-2 text-lg font-semibold">{t("github")}</h3>
-                <p className="text-gray-300 transition-colors group-hover:text-white">{t("viewMyCode")}</p>
+                <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white transition-colors duration-300">{t("github")}</h3>
+                <p className="text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">{t("viewMyCode")}</p>
               </div>
             </a>
           </div>
