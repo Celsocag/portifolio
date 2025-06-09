@@ -112,9 +112,9 @@ export const translations = {
     // Projects Section
     projectsTitle: "Featured Projects",
     projectsDescription: "Some of my recent work",
-    ecommerceTitle: "E-commerce Platform",
-    ecommerceDesc:
-      "A full-featured online store with shopping cart, product search, filtering, and responsive design. Built with Next.js and TypeScript.",
+    recipeApp: "AI Recipes",
+    recipeAppDesc:
+      "A simple and interactive app that uses artificial intelligence to create recipes based on the ingredients you already have at home. Just add the items to your list, and the app generates a personalized recipe using AI via Hugging Face.",
     formsTitle: "Interactive Form Suite",
     formsDesc:
       "Comprehensive form collection with validation, multiple input types, and responsive design. Includes contact, survey, and registration forms.",
