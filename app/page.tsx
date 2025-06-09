@@ -574,9 +574,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="text-center mt-12">
-            <p className="text-gray-500 dark:text-gray-400 transition-colors duration-300">{t("responseTime")}</p>
-          </div>
+      
         </div>
       </section>
     </>
