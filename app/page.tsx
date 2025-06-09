@@ -462,119 +462,100 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-         <section
+      <section
         id="contact"
-        className="py-20 bg-gray-100 dark:bg-gray-900 transition-colors duration-300"
+        className="bg-gray-900 py-20 text-white transition-colors duration-300 dark:bg-gray-800"
         aria-labelledby="contact-heading"
       >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2
-              id="contact-heading"
-              className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white transition-colors duration-300"
-            >
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <h2 id="contact-heading" className="mb-4 text-3xl font-bold md:text-4xl">
               {t("contactTitle")}
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors duration-300">
-              {t("contactDescription")}
-            </p>
+            <p className="mx-auto max-w-2xl text-lg text-gray-300">{t("contactDescription")}</p>
           </div>
 
           <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
             role="list"
             aria-label="Métodos de contato"
           >
             {/* Email */}
             <a
-              href="mailto:alex@example.com"
-              className="group bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 focus-visible:outline-blue-500 shadow-sm hover:shadow-md"
+              href="mailto:celsoalbugo@gmail.com"
+              className="group rounded-lg border border-gray-700 bg-gray-800 p-6 transition-all duration-300 hover:scale-105 hover:transform hover:border-blue-500 focus-visible:outline-blue-500 dark:border-gray-600 dark:bg-gray-700"
               role="listitem"
-              aria-label="Enviar email para alex@example.com"
+              aria-label="Enviar email para celsoalbugo@gmail.com"
             >
               <div className="text-center">
                 <Mail
-                  className="h-8 w-8 text-blue-500 dark:text-blue-400 mx-auto mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors"
+                  className="mx-auto mb-4 h-8 w-8 text-blue-400 transition-colors group-hover:text-blue-300"
                   aria-hidden="true"
                 />
-                <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white transition-colors duration-300">
-                  {t("email")}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
-                  alex@example.com
+                <h3 className="mb-2 text-lg font-semibold">{t("email")}</h3>
+                <p className="mx-auto max-w-xs break-words text-gray-300 transition-colors group-hover:text-white">
+                  celsoalbugo@gmail.com
                 </p>
               </div>
             </a>
 
             {/* Phone */}
             <a
-              href="tel:+1234567890"
-              className="group bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-green-500 dark:hover:border-green-400 transition-all duration-300 hover:transform hover:scale-105 focus-visible:outline-green-500 shadow-sm hover:shadow-md"
+              href="https://wa.me/5511978283108"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-lg border border-gray-700 bg-gray-800 p-6 transition-all duration-300 hover:scale-105 hover:transform hover:border-green-500 focus-visible:outline-green-500 dark:border-gray-600 dark:bg-gray-700"
               role="listitem"
-              aria-label="Ligar para +1 (234) 567-8900"
+              aria-label="Ligar para +55 11 978283108"
             >
               <div className="text-center">
                 <Phone
-                  className="h-8 w-8 text-green-500 dark:text-green-400 mx-auto mb-4 group-hover:text-green-600 dark:group-hover:text-green-300 transition-colors"
+                  className="mx-auto mb-4 h-8 w-8 text-green-400 transition-colors group-hover:text-green-300"
                   aria-hidden="true"
                 />
-                <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white transition-colors duration-300">
-                  {t("phone")}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
-                  +1 (234) 567-8900
-                </p>
+                <h3 className="mb-2 text-lg font-semibold">{t("phone")}</h3>
+                <p className="text-gray-300 transition-colors group-hover:text-white">+55 11 978283108</p>
               </div>
             </a>
 
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com/in/alexjohnson"
+              href="https://linkedin.com/in/celso-gonçalves/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105 focus-visible:outline-blue-600 shadow-sm hover:shadow-md"
+              className="group rounded-lg border border-gray-700 bg-gray-800 p-6 transition-all duration-300 hover:scale-105 hover:transform hover:border-blue-600 focus-visible:outline-blue-600 dark:border-gray-600 dark:bg-gray-700"
               role="listitem"
               aria-label="Conectar no LinkedIn (abre em nova aba)"
             >
               <div className="text-center">
                 <Linkedin
-                  className="h-8 w-8 text-blue-600 dark:text-blue-500 mx-auto mb-4 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors"
+                  className="mx-auto mb-4 h-8 w-8 text-blue-600 transition-colors group-hover:text-blue-500"
                   aria-hidden="true"
                 />
-                <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white transition-colors duration-300">
-                  {t("linkedin")}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
-                  {t("connectWithMe")}
-                </p>
+                <h3 className="mb-2 text-lg font-semibold">{t("linkedin")}</h3>
+                <p className="text-gray-300 transition-colors group-hover:text-white">{t("connectWithMe")}</p>
               </div>
             </a>
 
             {/* GitHub */}
             <a
-              href="https://github.com/alexjohnson"
+              href="https://github.com/Celsocag"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-400 transition-all duration-300 hover:transform hover:scale-105 focus-visible:outline-purple-500 shadow-sm hover:shadow-md"
+              className="group rounded-lg border border-gray-700 bg-gray-800 p-6 transition-all duration-300 hover:scale-105 hover:transform hover:border-purple-500 focus-visible:outline-purple-500 dark:border-gray-600 dark:bg-gray-700"
               role="listitem"
               aria-label="Ver perfil no GitHub (abre em nova aba)"
             >
               <div className="text-center">
                 <Github
-                  className="h-8 w-8 text-purple-500 dark:text-purple-400 mx-auto mb-4 group-hover:text-purple-600 dark:group-hover:text-purple-300 transition-colors"
+                  className="mx-auto mb-4 h-8 w-8 text-purple-400 transition-colors group-hover:text-purple-300"
                   aria-hidden="true"
                 />
-                <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white transition-colors duration-300">
-                  {t("github")}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
-                  {t("viewMyCode")}
-                </p>
+                <h3 className="mb-2 text-lg font-semibold">{t("github")}</h3>
+                <p className="text-gray-300 transition-colors group-hover:text-white">{t("viewMyCode")}</p>
               </div>
             </a>
           </div>
-
-      
         </div>
       </section>
     </>
