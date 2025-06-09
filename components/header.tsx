@@ -6,7 +6,7 @@ import { Menu, X, Moon, Sun, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "@/lib/contexts/theme-context"
 import { useLanguage } from "@/lib/contexts/language-context"
-import { getTranslation, languages } from "@/lib/i18n"
+import { getTranslation } from "@/lib/i18n"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,17 +17,17 @@ export default function Header() {
 
   const navigation = [
     { name: t("home"), href: "/" },
-    { name: t("experienceTitle"), href: "#experience" },
-    { name: t("projectsTitle"), href: "#projects" },
+    { name: t("experienceTitle"), href: "/#experience" },
+    { name: t("projectsTitle"), href: "/#projects" },
   ]
 
   return (
-      <header className="sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-sm border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
+    <header className="sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-sm border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" role="navigation" aria-label={t("mainNavigation")}>
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
-              Celso Albuquerque
+              Alex Johnson
             </Link>
           </div>
 
@@ -67,7 +67,7 @@ export default function Header() {
             </Button>
 
             <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white">
-              <Link href="#contact">{t("contact")}</Link>
+              <Link href="/#contact">{t("contact")}</Link>
             </Button>
           </div>
 
@@ -93,6 +93,7 @@ export default function Header() {
               className="text-gray-700 dark:text-gray-300"
             >
               <Globe className="h-4 w-4" />
+              {language === "en" ? "Português" : "English"}
             </Button>
 
             <Button variant="ghost" size="sm" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -116,7 +117,7 @@ export default function Header() {
                 </Link>
               ))}
               <Link
-                href="#contact"
+                href="/#contact"
                 className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 text-base font-medium transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
