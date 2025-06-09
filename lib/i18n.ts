@@ -46,7 +46,7 @@ export const translations = {
       "Coleção abrangente de formulários com validação, múltiplos tipos de entrada e design responsivo. Inclui formulários de contato, pesquisa e registro.",
     angularFullstack: "Angular Fullstack",
     angularFullstackDesc:
-      "Desenvolvendo uma aplicação Angular fullstack do zero",
+      "Desenvolvendo uma aplicação Angular fullstack do zero(Em andamento...)",
     code: "Código",
     demo: "Demo",
 
@@ -120,7 +120,7 @@ export const translations = {
       "Comprehensive form collection with validation, multiple input types, and responsive design. Includes contact, survey, and registration forms.",
     angularFullstack: "Angular fullstack",
     angularFullstackDesc:
-      "Angular fullstack app from the start",
+      "Angular fullstack app from the start(WIP)",
     code: "Code",
     demo: "Demo",
 
