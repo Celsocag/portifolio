@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Celso Albuquerque - Desenvolvedor Frontend",
   description:
-    "Portfólio de Celso Albuquerque, um desenvolvedor frontend apaixonado especializado em React, Next.js e tecnologias web modernas.",
+    "Portfólio de Celso Albuquerque, um desenvolvedor frontend apaixonado por criar experiências web bonitas, funcionais e intuitivas para o usuário.",
   keywords: "desenvolvedor frontend, React, Next.js, JavaScript, TypeScript, desenvolvimento web, Angular, SQL Server",
   authors: [{ name: "Celso Albuquerque" }],
   creator: "Celso Albuquerque",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Celso Albuquerque - Desenvolvedor Frontend",
     title: "Celso Albuquerque - Desenvolvedor Frontend",
     description:
-      "Portfólio de Celso Albuquerque, um desenvolvedor frontend apaixonado especializado em React, Next.js e tecnologias web modernas.",
+      "Portfólio de Celso Albuquerque, um desenvolvedor frontend apaixonado por criar experiências web bonitas, funcionais e intuitivas para o usuário.",
     images: [
       {
         url: "/og-image.jpg",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Celso Albuquerque - Desenvolvedor Frontend",
     description:
-      "Portfólio de Celso Albuquerque, um desenvolvedor frontend apaixonado especializado em React, Next.js e tecnologias web modernas.",
+      "Portfólio de Celso Albuquerque, um desenvolvedor frontend apaixonado por criar experiências web bonitas, funcionais e intuitivas para o usuário.",
     images: ["/og-image.jpg"],
   },
   generator: 'v0.dev'

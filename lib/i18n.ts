@@ -84,7 +84,7 @@ export const translations = {
 
     // Meta
     metaDescription:
-      "Portfólio de Celso Albuquerque, um desenvolvedor frontend apaixonado especializado em React, Next.js e tecnologias web modernas.",
+      "Portfólio de Celso Albuquerque, um desenvolvedor frontend apaixonado por criar experiências web bonitas, funcionais e intuitivas para o usuário.",
     metaKeywords: "desenvolvedor frontend, React, Next.js, JavaScript, TypeScript, desenvolvimento web",
   },
   en: {
