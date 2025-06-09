@@ -22,7 +22,6 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     alternateLocale: "en_US",
-    url: "https://alexjohnson.dev",
     siteName: "Celso Albuquerque - Desenvolvedor Frontend",
     title: "Celso Albuquerque - Desenvolvedor Frontend",
     description:
@@ -62,10 +61,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://alexjohnson.dev" />
-        <link rel="alternate" hrefLang="pt-BR" href="https://alexjohnson.dev" />
-        <link rel="alternate" hrefLang="en" href="https://alexjohnson.dev/en" />
-        <link rel="alternate" hrefLang="x-default" href="https://alexjohnson.dev" />
+
       </head>
       <body className={`${inter.className} transition-colors duration-300`}>
         <ThemeProvider>

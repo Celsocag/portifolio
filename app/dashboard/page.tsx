@@ -51,7 +51,7 @@ const tasks: Task[] = [
     title: "Write API documentation",
     status: "pending",
     priority: "medium",
-    assignee: "Alex Rodriguez",
+    assignee: "Celso Albuquerque",
     dueDate: "2024-01-20",
     project: "API Development",
   },
