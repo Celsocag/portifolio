@@ -37,7 +37,7 @@ export default function Home() {
       image: "/recipeApp.png?height=200&width=300",
       tech: ["React.js", "Vite", "@huggingface/inference", "React Markdown"],
       github: "https://github.com/Celsocag/recipe-app",
-      demo: "https://recipe-app-puce-alpha.vercel.app/",
+      demo: "",
     },
     {
       title: t("formsTitle"),
