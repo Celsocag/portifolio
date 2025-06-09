@@ -129,17 +129,21 @@ export default function Forms() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12 transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Responsive Forms</h1>
-          <p className="text-lg text-gray-600">Showcase of various form types with validation and responsive design</p>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
+            Responsive Forms
+          </h1>
+          <p className="text-lg text-gray-600 dark:text-gray-300 transition-colors duration-300">
+            Showcase of various form types with validation and responsive design
+          </p>
         </div>
 
         {submitted && (
-          <Card className="mb-8 border-green-200 bg-green-50">
+          <Card className="mb-8 border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20">
             <CardContent className="pt-6">
-              <div className="flex items-center gap-2 text-green-800">
+              <div className="flex items-center gap-2 text-green-800 dark:text-green-200">
                 <CheckCircle className="h-5 w-5" />
                 <span className="font-medium">
                   {submitted === "contact" && "Contact form submitted successfully!"}
@@ -160,24 +164,30 @@ export default function Forms() {
 
           {/* Contact Form */}
           <TabsContent value="contact">
-            <Card>
+            <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 transition-colors duration-300">
               <CardHeader>
-                <CardTitle>Contact Us</CardTitle>
-                <CardDescription>Get in touch with us. We'd love to hear from you.</CardDescription>
+                <CardTitle className="text-gray-900 dark:text-white transition-colors duration-300">
+                  Contact Us
+                </CardTitle>
+                <CardDescription className="text-gray-600 dark:text-gray-300 transition-colors duration-300">
+                  Get in touch with us. We'd love to hear from you.
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleContactSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name">Name *</Label>
+                      <Label htmlFor="name" className="text-gray-900 dark:text-white">
+                        Name *
+                      </Label>
                       <Input
                         id="name"
                         value={contactForm.name}
                         onChange={(e) => setContactForm((prev) => ({ ...prev, name: e.target.value }))}
-                        className={errors.name ? "border-red-500" : ""}
+                        className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white ${errors.name ? "border-red-500" : ""}`}
                       />
                       {errors.name && (
-                        <div className="flex items-center gap-1 text-red-600 text-sm">
+                        <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                           <AlertCircle className="h-4 w-4" />
                           {errors.name}
                         </div>
@@ -185,16 +195,18 @@ export default function Forms() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
+                      <Label htmlFor="email" className="text-gray-900 dark:text-white">
+                        Email *
+                      </Label>
                       <Input
                         id="email"
                         type="email"
                         value={contactForm.email}
                         onChange={(e) => setContactForm((prev) => ({ ...prev, email: e.target.value }))}
-                        className={errors.email ? "border-red-500" : ""}
+                        className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white ${errors.email ? "border-red-500" : ""}`}
                       />
                       {errors.email && (
-                        <div className="flex items-center gap-1 text-red-600 text-sm">
+                        <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                           <AlertCircle className="h-4 w-4" />
                           {errors.email}
                         </div>
@@ -203,15 +215,17 @@ export default function Forms() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="subject">Subject *</Label>
+                    <Label htmlFor="subject" className="text-gray-900 dark:text-white">
+                      Subject *
+                    </Label>
                     <Input
                       id="subject"
                       value={contactForm.subject}
                       onChange={(e) => setContactForm((prev) => ({ ...prev, subject: e.target.value }))}
-                      className={errors.subject ? "border-red-500" : ""}
+                      className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white ${errors.subject ? "border-red-500" : ""}`}
                     />
                     {errors.subject && (
-                      <div className="flex items-center gap-1 text-red-600 text-sm">
+                      <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                         <AlertCircle className="h-4 w-4" />
                         {errors.subject}
                       </div>
@@ -219,16 +233,18 @@ export default function Forms() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message *</Label>
+                    <Label htmlFor="message" className="text-gray-900 dark:text-white">
+                      Message *
+                    </Label>
                     <Textarea
                       id="message"
                       rows={5}
                       value={contactForm.message}
                       onChange={(e) => setContactForm((prev) => ({ ...prev, message: e.target.value }))}
-                      className={errors.message ? "border-red-500" : ""}
+                      className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white ${errors.message ? "border-red-500" : ""}`}
                     />
                     {errors.message && (
-                      <div className="flex items-center gap-1 text-red-600 text-sm">
+                      <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                         <AlertCircle className="h-4 w-4" />
                         {errors.message}
                       </div>
@@ -245,15 +261,19 @@ export default function Forms() {
 
           {/* Survey Form */}
           <TabsContent value="survey">
-            <Card>
+            <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 transition-colors duration-300">
               <CardHeader>
-                <CardTitle>User Experience Survey</CardTitle>
-                <CardDescription>Help us improve by sharing your feedback</CardDescription>
+                <CardTitle className="text-gray-900 dark:text-white transition-colors duration-300">
+                  User Experience Survey
+                </CardTitle>
+                <CardDescription className="text-gray-600 dark:text-gray-300 transition-colors duration-300">
+                  Help us improve by sharing your feedback
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSurveySubmit} className="space-y-6">
                   <div className="space-y-3">
-                    <Label>How satisfied are you with our service? *</Label>
+                    <Label className="text-gray-900 dark:text-white">How satisfied are you with our service? *</Label>
                     <RadioGroup
                       value={surveyForm.satisfaction}
                       onValueChange={(value) => setSurveyForm((prev) => ({ ...prev, satisfaction: value }))}
@@ -261,12 +281,14 @@ export default function Forms() {
                       {["Very Satisfied", "Satisfied", "Neutral", "Dissatisfied", "Very Dissatisfied"].map((option) => (
                         <div key={option} className="flex items-center space-x-2">
                           <RadioGroupItem value={option} id={option} />
-                          <Label htmlFor={option}>{option}</Label>
+                          <Label htmlFor={option} className="text-gray-900 dark:text-white">
+                            {option}
+                          </Label>
                         </div>
                       ))}
                     </RadioGroup>
                     {errors.satisfaction && (
-                      <div className="flex items-center gap-1 text-red-600 text-sm">
+                      <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                         <AlertCircle className="h-4 w-4" />
                         {errors.satisfaction}
                       </div>
@@ -274,7 +296,9 @@ export default function Forms() {
                   </div>
 
                   <div className="space-y-3">
-                    <Label>Which features do you use most? (Select all that apply)</Label>
+                    <Label className="text-gray-900 dark:text-white">
+                      Which features do you use most? (Select all that apply)
+                    </Label>
                     <div className="grid grid-cols-2 gap-3">
                       {["Dashboard", "Analytics", "Reports", "Settings", "Support", "API"].map((feature) => (
                         <div key={feature} className="flex items-center space-x-2">
@@ -283,19 +307,23 @@ export default function Forms() {
                             checked={surveyForm.features.includes(feature)}
                             onCheckedChange={(checked) => handleFeatureChange(feature, checked as boolean)}
                           />
-                          <Label htmlFor={feature}>{feature}</Label>
+                          <Label htmlFor={feature} className="text-gray-900 dark:text-white">
+                            {feature}
+                          </Label>
                         </div>
                       ))}
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <Label>Would you recommend us to others? *</Label>
+                    <Label className="text-gray-900 dark:text-white">Would you recommend us to others? *</Label>
                     <Select
                       value={surveyForm.recommendation}
                       onValueChange={(value) => setSurveyForm((prev) => ({ ...prev, recommendation: value }))}
                     >
-                      <SelectTrigger className={errors.recommendation ? "border-red-500" : ""}>
+                      <SelectTrigger
+                        className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white ${errors.recommendation ? "border-red-500" : ""}`}
+                      >
                         <SelectValue placeholder="Select an option" />
                       </SelectTrigger>
                       <SelectContent>
@@ -307,7 +335,7 @@ export default function Forms() {
                       </SelectContent>
                     </Select>
                     {errors.recommendation && (
-                      <div className="flex items-center gap-1 text-red-600 text-sm">
+                      <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                         <AlertCircle className="h-4 w-4" />
                         {errors.recommendation}
                       </div>
@@ -315,13 +343,16 @@ export default function Forms() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="feedback">Additional Feedback</Label>
+                    <Label htmlFor="feedback" className="text-gray-900 dark:text-white">
+                      Additional Feedback
+                    </Label>
                     <Textarea
                       id="feedback"
                       rows={4}
                       placeholder="Tell us more about your experience..."
                       value={surveyForm.feedback}
                       onChange={(e) => setSurveyForm((prev) => ({ ...prev, feedback: e.target.value }))}
+                      className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white`}
                     />
                   </div>
 
@@ -331,7 +362,9 @@ export default function Forms() {
                       checked={surveyForm.newsletter}
                       onCheckedChange={(checked) => setSurveyForm((prev) => ({ ...prev, newsletter: checked }))}
                     />
-                    <Label htmlFor="newsletter">Subscribe to our newsletter</Label>
+                    <Label htmlFor="newsletter" className="text-gray-900 dark:text-white">
+                      Subscribe to our newsletter
+                    </Label>
                   </div>
 
                   <Button type="submit" className="w-full">
@@ -344,24 +377,30 @@ export default function Forms() {
 
           {/* Registration Form */}
           <TabsContent value="registration">
-            <Card>
+            <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 transition-colors duration-300">
               <CardHeader>
-                <CardTitle>Create Account</CardTitle>
-                <CardDescription>Join our platform and start your journey</CardDescription>
+                <CardTitle className="text-gray-900 dark:text-white transition-colors duration-300">
+                  Create Account
+                </CardTitle>
+                <CardDescription className="text-gray-600 dark:text-gray-300 transition-colors duration-300">
+                  Join our platform and start your journey
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleRegistrationSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name *</Label>
+                      <Label htmlFor="firstName" className="text-gray-900 dark:text-white">
+                        First Name *
+                      </Label>
                       <Input
                         id="firstName"
                         value={registrationForm.firstName}
                         onChange={(e) => setRegistrationForm((prev) => ({ ...prev, firstName: e.target.value }))}
-                        className={errors.firstName ? "border-red-500" : ""}
+                        className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white ${errors.firstName ? "border-red-500" : ""}`}
                       />
                       {errors.firstName && (
-                        <div className="flex items-center gap-1 text-red-600 text-sm">
+                        <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                           <AlertCircle className="h-4 w-4" />
                           {errors.firstName}
                         </div>
@@ -369,15 +408,17 @@ export default function Forms() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name *</Label>
+                      <Label htmlFor="lastName" className="text-gray-900 dark:text-white">
+                        Last Name *
+                      </Label>
                       <Input
                         id="lastName"
                         value={registrationForm.lastName}
                         onChange={(e) => setRegistrationForm((prev) => ({ ...prev, lastName: e.target.value }))}
-                        className={errors.lastName ? "border-red-500" : ""}
+                        className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white ${errors.lastName ? "border-red-500" : ""}`}
                       />
                       {errors.lastName && (
-                        <div className="flex items-center gap-1 text-red-600 text-sm">
+                        <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                           <AlertCircle className="h-4 w-4" />
                           {errors.lastName}
                         </div>
@@ -386,16 +427,18 @@ export default function Forms() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="regEmail">Email Address *</Label>
+                    <Label htmlFor="regEmail" className="text-gray-900 dark:text-white">
+                      Email Address *
+                    </Label>
                     <Input
                       id="regEmail"
                       type="email"
                       value={registrationForm.email}
                       onChange={(e) => setRegistrationForm((prev) => ({ ...prev, email: e.target.value }))}
-                      className={errors.email ? "border-red-500" : ""}
+                      className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white ${errors.email ? "border-red-500" : ""}`}
                     />
                     {errors.email && (
-                      <div className="flex items-center gap-1 text-red-600 text-sm">
+                      <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                         <AlertCircle className="h-4 w-4" />
                         {errors.email}
                       </div>
@@ -404,16 +447,18 @@ export default function Forms() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="password">Password *</Label>
+                      <Label htmlFor="password" className="text-gray-900 dark:text-white">
+                        Password *
+                      </Label>
                       <Input
                         id="password"
                         type="password"
                         value={registrationForm.password}
                         onChange={(e) => setRegistrationForm((prev) => ({ ...prev, password: e.target.value }))}
-                        className={errors.password ? "border-red-500" : ""}
+                        className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white ${errors.password ? "border-red-500" : ""}`}
                       />
                       {errors.password && (
-                        <div className="flex items-center gap-1 text-red-600 text-sm">
+                        <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                           <AlertCircle className="h-4 w-4" />
                           {errors.password}
                         </div>
@@ -421,16 +466,18 @@ export default function Forms() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="confirmPassword">Confirm Password *</Label>
+                      <Label htmlFor="confirmPassword" className="text-gray-900 dark:text-white">
+                        Confirm Password *
+                      </Label>
                       <Input
                         id="confirmPassword"
                         type="password"
                         value={registrationForm.confirmPassword}
                         onChange={(e) => setRegistrationForm((prev) => ({ ...prev, confirmPassword: e.target.value }))}
-                        className={errors.confirmPassword ? "border-red-500" : ""}
+                        className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white ${errors.confirmPassword ? "border-red-500" : ""}`}
                       />
                       {errors.confirmPassword && (
-                        <div className="flex items-center gap-1 text-red-600 text-sm">
+                        <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                           <AlertCircle className="h-4 w-4" />
                           {errors.confirmPassword}
                         </div>
@@ -439,12 +486,14 @@ export default function Forms() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label>Country *</Label>
+                    <Label className="text-gray-900 dark:text-white">Country *</Label>
                     <Select
                       value={registrationForm.country}
                       onValueChange={(value) => setRegistrationForm((prev) => ({ ...prev, country: value }))}
                     >
-                      <SelectTrigger className={errors.country ? "border-red-500" : ""}>
+                      <SelectTrigger
+                        className={`bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white ${errors.country ? "border-red-500" : ""}`}
+                      >
                         <SelectValue placeholder="Select your country" />
                       </SelectTrigger>
                       <SelectContent>
@@ -459,7 +508,7 @@ export default function Forms() {
                       </SelectContent>
                     </Select>
                     {errors.country && (
-                      <div className="flex items-center gap-1 text-red-600 text-sm">
+                      <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                         <AlertCircle className="h-4 w-4" />
                         {errors.country}
                       </div>
@@ -475,7 +524,7 @@ export default function Forms() {
                           setRegistrationForm((prev) => ({ ...prev, terms: checked as boolean }))
                         }
                       />
-                      <Label htmlFor="terms" className="text-sm">
+                      <Label htmlFor="terms" className="text-sm text-gray-900 dark:text-white">
                         I agree to the{" "}
                         <a href="#" className="text-blue-600 hover:underline">
                           Terms and Conditions
@@ -488,7 +537,7 @@ export default function Forms() {
                       </Label>
                     </div>
                     {errors.terms && (
-                      <div className="flex items-center gap-1 text-red-600 text-sm">
+                      <div className="flex items-center gap-1 text-red-600 dark:text-red-400 text-sm">
                         <AlertCircle className="h-4 w-4" />
                         {errors.terms}
                       </div>
@@ -502,7 +551,7 @@ export default function Forms() {
                           setRegistrationForm((prev) => ({ ...prev, notifications: checked }))
                         }
                       />
-                      <Label htmlFor="notifications" className="text-sm">
+                      <Label htmlFor="notifications" className="text-sm text-gray-900 dark:text-white">
                         Send me email notifications about updates and promotions
                       </Label>
                     </div>
