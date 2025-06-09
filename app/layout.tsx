@@ -41,8 +41,7 @@ export const metadata: Metadata = {
     description:
       "Portfólio de Celso Albuquerque, um desenvolvedor frontend apaixonado por criar experiências web bonitas, funcionais e intuitivas para o usuário.",
     images: ["/og-image.jpg"],
-  },
-  generator: 'v0.dev'
+  }
 };
 
 export const viewport = "width=device-width, initial-scale=1";
