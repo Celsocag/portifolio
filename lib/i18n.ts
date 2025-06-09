@@ -118,9 +118,9 @@ export const translations = {
     formsTitle: "Interactive Form Suite",
     formsDesc:
       "Comprehensive form collection with validation, multiple input types, and responsive design. Includes contact, survey, and registration forms.",
-    angularFullstack: "Angular fullstack app from the start",
+    angularFullstack: "Angular fullstack",
     angularFullstackDesc:
-      "desenvolvendo um app angular do zero.",
+      "Angular fullstack app from the start",
     code: "Code",
     demo: "Demo",
 
