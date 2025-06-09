@@ -51,6 +51,9 @@ export const translations = {
     angularFullstack: "Angular Fullstack",
     angularFullstackDesc:
       "Desenvolvendo uma aplicação Angular fullstack do zero(Em andamento...)",
+    dashboardTitle: "Dashboard de Gerenciamento de Tarefas",
+    dashboardDesc:
+      "Interface de dashboard moderna com visualização de dados, tabelas responsivas e componentes interativos para gerenciamento de projetos.",
     code: "Código",
     demo: "Demo",
 
@@ -129,6 +132,9 @@ export const translations = {
     angularFullstack: "Angular fullstack",
     angularFullstackDesc:
       "Angular fullstack app from the start(WIP)",
+    dashboardTitle: "Task Management Dashboard",
+    dashboardDesc:
+      "Modern dashboard interface with data visualization, responsive tables, and interactive components for project management.",
     code: "Code",
     demo: "Demo",
 

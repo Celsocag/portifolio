@@ -69,6 +69,14 @@ export default function Home() {
       github: "https://github.com/Celsocag/angular_fullstack",
       demo: "",
     },
+    {
+      title: t("dashboardTitle"),
+      description: t("dashboardDesc"),
+      image: "/placeholder.svg?height=200&width=300",
+      tech: ["React", "Next.js", "Charts.js"],
+      github: "",
+      demo: "/dashboard",
+    },
   ]
 
   const experiences = {
