@@ -12,14 +12,17 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const { language, toggleLanguage } = useLanguage()
-  const otherLanguage = language === "pt-BR" ? "en" : "pt-BR";
 
   const t = (key: keyof typeof import("@/lib/i18n").translations["pt-BR"]) => getTranslation(language, key)
 
-  const navigation = [{ name: t("home"), href: "/" }]
+  const navigation = [
+    { name: t("home"), href: "/" },
+    { name: t("experienceTitle"), href: "#experience" },
+    { name: t("projectsTitle"), href: "#projects" },
+  ]
 
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-sm border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
+      <header className="sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-sm border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" role="navigation" aria-label={t("mainNavigation")}>
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -60,7 +63,7 @@ export default function Header() {
               className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
             >
               <Globe className="h-4 w-4 mr-1" />
-              {languages[otherLanguage]}
+              {language === "en" ? "Português" : "English"}
             </Button>
 
             <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white">

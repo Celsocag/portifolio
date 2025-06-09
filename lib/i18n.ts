@@ -31,13 +31,17 @@ export const translations = {
     performance: "Performance",
     performanceDesc: "Otimizando para velocidade e experiência do usuário.",
 
+  // Experience Section
+    experienceTitle: "Experiência Profissional",
+    experienceDescription: "Minha jornada na indústria de tecnologia",
+
     // Skills Section
     skillsTitle: "Habilidades & Tecnologias",
     skillsDescription: "Tecnologias com as quais trabalho diariamente",
 
     // Projects Section
-    projectsTitle: "Projetos em Destaque",
-    projectsDescription: "Alguns dos meus trabalhos recentes",
+    projectsTitle: "Projetos",
+    projectsDescription: "Projetos para Aprimoramento Técnico",
     recipeApp: "Receitas IA",
     recipeAppDesc:
       "Um aplicativo simples e interativo que utiliza inteligência artificial para criar receitas com base nos ingredientes que você já tem em casa. Basta adicionar os itens à sua lista e o app gera uma receita personalizada usando IA via Hugging Face.",
@@ -105,13 +109,17 @@ export const translations = {
     performance: "Performance",
     performanceDesc: "Optimizing for speed and user experience.",
 
+    // Experience Section
+    experienceTitle: "Professional Experience",
+    experienceDescription: "My journey in the tech industry",
+
     // Skills Section
     skillsTitle: "Skills & Technologies",
     skillsDescription: "Technologies I work with on a daily basis",
 
     // Projects Section
-    projectsTitle: "Featured Projects",
-    projectsDescription: "Some of my recent work",
+    projectsTitle: "Projects",
+    projectsDescription: "Skill-Building Projects",
     recipeApp: "AI Recipes",
     recipeAppDesc:
       "A simple and interactive app that uses artificial intelligence to create recipes based on the ingredients you already have at home. Just add the items to your list, and the app generates a personalized recipe using AI via Hugging Face.",
