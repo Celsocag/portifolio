@@ -298,17 +298,6 @@ export default function Home() {
               >
                 <div className="p-6 md:p-8">
                   <div className="flex flex-col gap-6 md:flex-row md:items-center">
-                    <div className="flex-shrink-0">
-                      <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-md bg-gray-100 dark:bg-gray-700">
-                        <Image
-                          src={experience.logo || "/placeholder.svg"}
-                          alt={`${experience.company} logo`}
-                          width={80}
-                          height={80}
-                          className="object-contain"
-                        />
-                      </div>
-                    </div>
                     <div className="flex-grow">
                       <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
                         <h3 className="text-2xl font-bold text-gray-900 transition-colors duration-300 dark:text-white">
