@@ -24,14 +24,14 @@ export const translations = {
       "Sou desenvolvedor front-end com 4 anos de experiência na construção de aplicações web usando diversas tecnologias. Comprometido com uma arquitetura de código limpa e escalável, focando em soluções simples e eficientes.",
     cleanCode: "Código Limpo",
     cleanCodeDesc: "Escrevendo código sustentável, escalável e eficiente.",
-    uiuxDesign: "Design UI/UX",
-    uiuxDesignDesc: "Criando interfaces de usuário bonitas e intuitivas.",
+   accessibility: "Acessibilidade",
+    accessibilityDesc: "Garantia de acesso para todos: WCAG, navegação por teclado e leitores de tela.",
     responsive: "Responsivo",
     responsiveDesc: "Construindo aplicações que funcionam em todos os dispositivos.",
     performance: "Performance",
     performanceDesc: "Otimizando para velocidade e experiência do usuário.",
 
-  // Experience Section
+    // Experience Section
     experienceTitle: "Experiência Profissional",
     experienceDescription: "Minha jornada na indústria de tecnologia",
 
@@ -105,8 +105,8 @@ export const translations = {
       "I am a front-end developer with 4 years of experience building web applications using various technologies. Committed to clean and scalable code architecture, focusing on simple and efficient solutions.",
     cleanCode: "Clean Code",
     cleanCodeDesc: "Writing maintainable, scalable, and efficient code.",
-    uiuxDesign: "UI/UX Design",
-    uiuxDesignDesc: "Creating beautiful and intuitive user interfaces.",
+    accessibility: "Accessibility",
+    accessibilityDesc: "Ensuring accessibility: WCAG, keyboard navigation and screen-reader support.",
     responsive: "Responsive",
     responsiveDesc: "Building applications that work on all devices.",
     performance: "Performance",
@@ -171,5 +171,6 @@ export const translations = {
 }
 
 export function getTranslation(language: Language, key: keyof (typeof translations)["pt-BR"]) {
-  return translations[language][key] || translations["pt-BR"][key]
+  const t = (translations as any)[language]?.[key]
+  return t ?? (translations as any)["pt-BR"][key]
 }

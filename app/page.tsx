@@ -9,7 +9,7 @@ import {
   Github,
   ExternalLink,
   Code,
-  Palette,
+  Accessibility,
   Smartphone,
   Zap,
   Mail,
@@ -233,7 +233,7 @@ export default function Home() {
             <p className="mx-auto max-w-3xl text-lg text-gray-600 transition-colors duration-300 dark:text-gray-300">
               {t("aboutDescription")
                 .split("\n")
-                .map((line, i) => (
+                .map((line: string, i: number) => (
                   <React.Fragment key={i}>
                     {line}
                     <br />
@@ -260,16 +260,16 @@ export default function Home() {
 
             <Card className="border-gray-200 bg-white text-center transition-colors duration-300 dark:border-gray-700 dark:bg-gray-800">
               <CardHeader>
-                <Palette
+                <Accessibility
                   className="mx-auto mb-4 h-12 w-12 text-blue-600 transition-colors duration-300 dark:text-blue-400"
                   aria-hidden="true"
                 />
                 <CardTitle className="text-gray-900 transition-colors duration-300 dark:text-white">
-                  {t("uiuxDesign")}
+                  {t("accessibility")}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300">{t("uiuxDesignDesc")}</p>
+                <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300">{t("accessibilityDesc")}</p>
               </CardContent>
             </Card>
 
