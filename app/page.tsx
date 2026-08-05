@@ -82,17 +82,22 @@ export default function Home() {
   const experiences = {
     "pt-BR": [
       {
-        company: "Exclusiva Sexshop",
-        title: "Desenvolvedor Frontend",
-        period: "Novembro 2020 - Novembro 2021",
+        company: "ACT Digital",
+        title: "Engenheiro de Software",
+        period: "Outubro 2025 - Atualmente",
+        description: [],
+        logo: "https://media.licdn.com/dms/image/v2/D4D0BAQHovPVPTiORFA/company-logo_200_200/company-logo_200_200/0/1721908604071/think4_logo?e=1755129600&v=beta&t=MJR4sTEOSTgPx3kqGSRwmV0qJuDom9fS5kZWlYQl7tQ",
+      },
+      {
+        company: "Geração TI Desenvolvimento e consultoria",
+        title: "Desenvolvedor Frontend Senior II",
+        period: "Julho 2025 - Novembro 2025",
         description: [
-          "Desenvolvi e mantive a plataforma de e-commerce em Angular",
-          "Implementei princípios de design responsivo,",
-          "Colaborei com designers UX/UI para criar interfaces intuitivas e experiências de usuário fluidas",
-          "Pesquisei e implementei soluções tecnológicas, incluindo o uso de pacotes externos e estratégias para otimização de desempenho em dispositivos móveis.",
-          "Realizei análises de performance com o Google Lighthouse e implementei melhorias para aumentar as pontuações de carregamento, acessibilidade e boas práticas.",
+          "Atuei como Desenvolvedor Frontend alocado na equipe de Tecnologia do BTG Pactual, desenvolvendo e mantendo aplicações web com Angular, aplicando práticas de código limpo, componentização e design responsivo.",
+          "Atuei no desenho de arquiteturas de soluções escaláveis, resolução de problemas complexos de layout e garantia de qualidade por meio de testes unitários.",
+          "Participei de cerimônias ágeis e colaborei utilizando GIT para versionamento de código.",
         ],
-        logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEudSLDl1ccow/company-logo_200_200/company-logo_200_200/0/1631312273160?e=1755129600&v=beta&t=O30S9GIyEQyHE4LCHWsb2K2xfwJe7LZwzarFoTmAZNo",
+        logo: "https://media.licdn.com/dms/image/v2/D4D0BAQHovPVPTiORFA/company-logo_200_200/company-logo_200_200/0/1721908604071/think4_logo?e=1755129600&v=beta&t=MJR4sTEOSTgPx3kqGSRwmV0qJuDom9fS5kZWlYQl7tQ",
       },
       {
         company: "Think4",
@@ -107,8 +112,39 @@ export default function Home() {
         ],
         logo: "https://media.licdn.com/dms/image/v2/D4D0BAQHovPVPTiORFA/company-logo_200_200/company-logo_200_200/0/1721908604071/think4_logo?e=1755129600&v=beta&t=MJR4sTEOSTgPx3kqGSRwmV0qJuDom9fS5kZWlYQl7tQ",
       },
+      {
+        company: "Exclusiva Sexshop",
+        title: "Desenvolvedor Frontend",
+        period: "Novembro 2020 - Novembro 2021",
+        description: [
+          "Desenvolvi e mantive a plataforma de e-commerce em Angular",
+          "Implementei princípios de design responsivo,",
+          "Colaborei com designers UX/UI para criar interfaces intuitivas e experiências de usuário fluidas",
+          "Pesquisei e implementei soluções tecnológicas, incluindo o uso de pacotes externos e estratégias para otimização de desempenho em dispositivos móveis.",
+          "Realizei análises de performance com o Google Lighthouse e implementei melhorias para aumentar as pontuações de carregamento, acessibilidade e boas práticas.",
+        ],
+        logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEudSLDl1ccow/company-logo_200_200/company-logo_200_200/0/1631312273160?e=1755129600&v=beta&t=O30S9GIyEQyHE4LCHWsb2K2xfwJe7LZwzarFoTmAZNo",
+      },
     ],
     en: [
+      {
+        company: "ACT Digital",
+        title: "Software Engineer",
+        period: "October 2025 - Present",
+        description: [],
+        logo: "https://media.licdn.com/dms/image/v2/D4D0BAQHovPVPTiORFA/company-logo_200_200/company-logo_200_200/0/1721908604071/think4_logo?e=1755129600&v=beta&t=MJR4sTEOSTgPx3kqGSRwmV0qJuDom9fS5kZWlYQl7tQ",
+      },
+      {
+        company: "Geração TI Desenvolvimento e consultoria",
+        title: "Senior Frontend Developer II",
+        period: "July 2025 - November 2025",
+        description: [
+          "Worked as a Frontend Developer assigned to BTG Pactual's Technology team, developing and maintaining web applications with Angular, applying clean code practices, componentization, and responsive design.",
+          "Worked on designing scalable solution architectures, resolving complex layout issues, and ensuring quality through unit testing.",
+          "Participated in agile ceremonies and collaborated using Git for source control.",
+        ],
+        logo: "https://media.licdn.com/dms/image/v2/D4D0BAQHovPVPTiORFA/company-logo_200_200/company-logo_200_200/0/1721908604071/think4_logo?e=1755129600&v=beta&t=MJR4sTEOSTgPx3kqGSRwmV0qJuDom9fS5kZWlYQl7tQ",
+      },
       {
         company: "Exclusiva Sexshop",
         title: "Frontend Developer",
@@ -493,7 +529,7 @@ export default function Home() {
               href="https://wa.me/5511978283108"
               target="_blank"
               rel="noopener noreferrer"
-                 className="group bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-green-500 dark:hover:border-green-400 transition-all duration-300 hover:transform hover:scale-105 focus-visible:outline-green-500 shadow-sm hover:shadow-md"
+              className="group bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-green-500 dark:hover:border-green-400 transition-all duration-300 hover:transform hover:scale-105 focus-visible:outline-green-500 shadow-sm hover:shadow-md"
               role="listitem"
               aria-label="Ligar para +55 11 978283108"
             >
